@@ -17,8 +17,12 @@ public class MainActivity extends AppCompatActivity {
         TxtMsg2.setText(R.string.Msg2);
 
         Log.i(  "LifeCycle", "onCreate() invoked");
-
-
+    }
+    
+     @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i( "Lifecycle", "dvStart");
     }
 
 }
