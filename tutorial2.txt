@@ -29,5 +29,9 @@ public class MainActivity extends AppCompatActivity {
         super.onRestart();
         Log.i( " Lifecycle", "onPaused");
     }
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i( " Lifecycle", "onDestroy");
+    }
 }
